@@ -1,0 +1,229 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/tzuyu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/tzuyu"
+                android:layout_weight="0.33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="0.33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/tzuyu"/>
+            <Button
+                android:id="@+id/tzuyuVote"
+                android:layout_weight="0.33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/vote"/>
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/mina"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/mina"
+                android:layout_weight="0.33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="0.33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/mina"/>
+            <Button
+                android:id="@+id/minaVote"
+                android:layout_weight="0.33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/vote"/>
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/sana"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/sana"
+                android:layout_weight="0.33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="0.33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/sana"/>
+            <Button
+                android:id="@+id/sanaVote"
+                android:layout_weight="0.33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/vote"/>
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/momo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/momo"
+                android:layout_weight="0.33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="0.33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/momo"/>
+            <Button
+                android:id="@+id/momoVote"
+                android:layout_weight="0.33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/vote"/>
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/chaeyoung"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/chaeyoung"
+                android:layout_weight="0.33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="0.33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/chaeyoung"/>
+            <Button
+                android:id="@+id/chaeyoungVote"
+                android:layout_weight="0.33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/vote"/>
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/jihyo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/jihyo"
+                android:layout_weight="0.33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="0.33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/jihyo"/>
+            <Button
+                android:id="@+id/jihyoVote"
+                android:layout_weight="0.33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/vote"/>
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/dahyun"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/dahyun"
+                android:layout_weight="0.33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="0.33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/dahyun"/>
+            <Button
+                android:id="@+id/dahyunVote"
+                android:layout_weight="0.33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/vote"/>
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/jungyeon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/jungyeon"
+                android:layout_weight="0.33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="0.33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/jungyeon"/>
+            <Button
+                android:id="@+id/jungyeonVote"
+                android:layout_weight="0.33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/vote"/>
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/nayeon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/nayeon"
+                android:layout_weight="0.33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="0.33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/nayeon"/>
+            <Button
+                android:id="@+id/nayeonVote"
+                android:layout_weight="0.33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/vote"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

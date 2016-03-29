@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">TwiceLove</string>
+    <string name="activity">Activity</string>
+    <string name="image">Image</string>
+    <string name="video">Video</string>
+    <string name="voice">Voice</string>
+    <string name="vote">Vote</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="chat">Chat</string>
+
+    <string name="tzuyu">Tzuyu</string>
+    <string name="mina">Mina</string>
+    <string name="sana">Sana</string>
+    <string name="nayeon">Na Yeon</string>
+    <string name="momo">Momo</string>
+    <string name="jihyo">Ji Hyo</string>
+    <string name="jungyeon">Jung Yeon</string>
+    <string name="dahyun">Da Hyun</string>
+    <string name="chaeyoung">Chae Young</string>
+</resources>
