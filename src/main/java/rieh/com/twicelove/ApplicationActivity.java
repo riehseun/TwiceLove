@@ -1,9 +1,8 @@
 package rieh.com.twicelove;
 
-import android.app.Activity;
-import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 import rieh.com.twicelove.ui.Chat;
 import rieh.com.twicelove.ui.Header;
@@ -11,11 +10,13 @@ import rieh.com.twicelove.ui.Activities;
 import rieh.com.twicelove.ui.Images;
 import rieh.com.twicelove.ui.Info;
 import rieh.com.twicelove.ui.Leaderboard;
+import rieh.com.twicelove.ui.Post;
 import rieh.com.twicelove.ui.Videos;
 import rieh.com.twicelove.ui.Voices;
 import rieh.com.twicelove.ui.Vote;
 
-public class ApplicationActivity extends Activity {
+public class ApplicationActivity extends AppCompatActivity {
+    public static final String NAME = ApplicationActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,6 +87,14 @@ public class ApplicationActivity extends Activity {
         getFragmentManager().beginTransaction()
                 .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
                 .replace(R.id.content, new Chat(), Chat.NAME)
+                .addToBackStack(null)
+                .commit();
+    }
+
+    public void post() {
+        getFragmentManager().beginTransaction()
+                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                .replace(R.id.content, new Post(), Post.NAME)
                 .addToBackStack(null)
                 .commit();
     }
