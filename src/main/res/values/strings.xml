@@ -17,4 +17,7 @@
     <string name="jungyeon">Jung Yeon</string>
     <string name="dahyun">Da Hyun</string>
     <string name="chaeyoung">Chae Young</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
 </resources>
