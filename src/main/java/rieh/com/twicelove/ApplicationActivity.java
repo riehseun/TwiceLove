@@ -57,7 +57,6 @@ public class ApplicationActivity extends AppCompatActivity {
         setContentView(R.layout.applicationactivity);
 
         // add Form
-        /*
         if (savedInstanceState == null) {
             // adding a fragment dynamically requires to ensure activity is not recreated from saved instance state
             // if 'savedInstanceState' is null - this menas activity is created for the first time, ie. app just started
@@ -68,20 +67,23 @@ public class ApplicationActivity extends AppCompatActivity {
                     .add(R.id.content, new Activities(), Activities.NAME)
                     .commit();
         }
-        */
 
-        listView = (ListView) findViewById(R.id.recyclerView);
+        //listView = (ListView) findViewById(R.id.recyclerView);
+        listView = (ListView) findViewById(R.id.list);
 
         feedItems = new ArrayList<FeedItem>();
 
         listAdapter = new FeedListAdapter(this, feedItems);
+        System.out.println("listAdapter: " + listAdapter);
         listView.setAdapter(listAdapter);
 
         // These two lines not needed,
         // just to get the look of facebook (changing background color & hiding the icon)
+        /*
         getActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#3b5998")));
-        getActionBar().setIcon(
-                new ColorDrawable(getResources().getColor(android.R.color.transparent)));
+        getActionBar()
+                .setIcon(new ColorDrawable(getResources().getColor(android.R.color.transparent)));
+        */
 
         // We first check for cached request
         Cache cache = AppController.getInstance().getRequestQueue().getCache();
@@ -227,5 +229,4 @@ public class ApplicationActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
-
 }

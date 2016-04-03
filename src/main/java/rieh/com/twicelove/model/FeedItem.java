@@ -8,6 +8,7 @@ public class FeedItem {
     private String name, status, image, profilePic, timeStamp, url;
 
     public FeedItem() {
+
     }
 
     public FeedItem(int id, String name, String image, String status,
