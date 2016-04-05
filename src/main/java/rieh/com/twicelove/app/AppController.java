@@ -15,7 +15,6 @@ import com.android.volley.toolbox.Volley;
 import rieh.com.twicelove.volley.LruBitmapCache;
 
 public class AppController extends Application {
-
     public static final String TAG = AppController.class.getSimpleName();
 
     private RequestQueue mRequestQueue;

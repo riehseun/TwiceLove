@@ -63,8 +63,7 @@ public class FeedImageView extends ImageView {
         this(context, attrs, 0);
     }
 
-    public FeedImageView(Context context, AttributeSet attrs,
-                         int defStyle) {
+    public FeedImageView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
     }
 

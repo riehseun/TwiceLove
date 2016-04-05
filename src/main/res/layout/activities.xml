@@ -6,24 +6,14 @@
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/activities"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="?attr/listPreferredItemHeight"
-        android:gravity="center_vertical"
-        android:paddingLeft="8dp"
-        android:paddingRight="8dp">
+        android:layout_height="match_parent">
 
         <ListView
             android:id="@+id/list"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:divider="@null" />
-
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recyclerView"
-            android:layout_width="fill_parent"
-            android:layout_height="match_parent"
-            android:divider="@null"/>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
     </LinearLayout>
 
     <android.support.design.widget.FloatingActionButton

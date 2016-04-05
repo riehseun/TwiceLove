@@ -2,12 +2,9 @@ package rieh.com.twicelove;
 
 import android.annotation.SuppressLint;
 import android.app.FragmentTransaction;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
-import android.view.View;
-import android.widget.Button;
 
 import rieh.com.twicelove.ui.Chat;
 import rieh.com.twicelove.ui.Header;
@@ -19,19 +16,16 @@ import rieh.com.twicelove.ui.Post;
 import rieh.com.twicelove.ui.Videos;
 import rieh.com.twicelove.ui.Voices;
 import rieh.com.twicelove.ui.Vote;
-import rieh.com.twicelove.util.SQLiteHandler;
-import rieh.com.twicelove.util.SessionManager;
 
-public class ApplicationActivity extends AppCompatActivity {
+/**
+ * Created by user on 2016-04-05.
+ */
+public class MainActivity extends AppCompatActivity {
     public static final String NAME = ApplicationActivity.class.getSimpleName();
 
     public static final String MESSAGE_KEY = "message_key";
     public static final String PHOTO_URL_KEY = "photo_url_key";
     public static final String VIDEO_URL_KEY = "video_url_key";
-
-    private SQLiteHandler db;
-    private SessionManager session;
-    private Button btnLogout;
 
     @SuppressLint("NewApi")
     @Override
@@ -51,24 +45,13 @@ public class ApplicationActivity extends AppCompatActivity {
                     .commit();
         }
 
-        // SqLite database handler
-        db = new SQLiteHandler(getApplicationContext());
-
-        // session manager
-        session = new SessionManager(getApplicationContext());
-
-        btnLogout = (Button) findViewById(R.id.btnLogout);
-        btnLogout.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                logoutUser();
-            }
-        });
-
-        if (!session.isLoggedIn()) {
-            logoutUser();
-        }
+        // These two lines not needed,
+        // just to get the look of facebook (changing background color & hiding the icon)
+        /*
+        getActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#3b5998")));
+        getActionBar()
+                .setIcon(new ColorDrawable(getResources().getColor(android.R.color.transparent)));
+        */
     }
 
     public void addActivities() {
@@ -133,17 +116,6 @@ public class ApplicationActivity extends AppCompatActivity {
                 .replace(R.id.content, new Post(), Post.NAME)
                 .addToBackStack(null)
                 .commit();
-    }
-
-    private void logoutUser() {
-        session.setLogin(false);
-
-        db.deleteUsers();
-
-        // Launching the login activity
-        Intent intent = new Intent(ApplicationActivity.this, LoginActivity.class);
-        startActivity(intent);
-        finish();
     }
 
     @Override

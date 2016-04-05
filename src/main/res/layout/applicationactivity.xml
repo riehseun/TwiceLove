@@ -7,6 +7,12 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:textSize="16dp"
+            android:text="Logout"/>
         <RelativeLayout
             android:id="@+id/info"
             android:layout_weight="0.4"
@@ -22,11 +28,6 @@
             android:layout_weight="5"
             android:layout_width="match_parent"
             android:layout_height="0dp">
-            <ListView
-                android:id="@+id/list"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-             </ListView>
         </RelativeLayout>
     </LinearLayout>
 
