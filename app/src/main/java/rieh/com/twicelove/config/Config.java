@@ -5,7 +5,7 @@ package rieh.com.twicelove.config;
  */
 public class Config {
 
-    public static final String URL = "52.201.232.32";
+    public static final String URL = "54.165.191.67";
 
     public static final String LOGIN_URL = "http://" + URL + "/TwiceLove-Backend/user/login";
     public static final String REGISTER_URL = "http://" + URL + "/TwiceLove-Backend/user/register";
